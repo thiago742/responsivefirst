@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 16px 0;
+    background-color: black;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    
+
+}
+
+header nav li a{
+    color:#ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, 
+section .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 50px;
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+    color: black;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.frontstore{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.aboutstore{
+    margin-left: 3%;
+    padding: 15px 15px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: black;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #2045aa;
+    
+}
+
+input:focus, textarea:focus {
+    outline-color: black;
+}
+
+footer {
+    background-color: black;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+.produtosloja {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 2%;
+    margin-left: 15px;
+    row-gap: 5%;
+}
+.tenis-loja {
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.frontstore h2,
+#product h2,
+.container h2 {
+    margin-left: 1%;
+    font-size: 2.5em;
+}
+
+.tenis-loja img {
+    height: 200px;
+}
+
+.tenisModelo {
+    font-size: 2em;
+}
+.descriTenis {
+    max-width: 90px;
+    background-color: #3add83;
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+    margin-left: 10px
+}
+
+.tenis-loja button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.tenis-loja button:hover {
+    background-color: #303030;
+}
+
+@media screen and (max-width: 767px) {
+
+    header .container, 
+    section .container {
+        flex-direction: column;
+    }
+
+
+    .frontstore {
+        display: block;
+    }
+
+    .brands-list {
+        display: flex;
+        margin-left: 18%;
+        margin-top: 90px;
+    }
+
+    .frontstore img {
+        width: 90%;
+        margin-left: 4%;
+    }
+    .produtosloja {
+        display: block;
+
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .contact-methods {
+        display: block;
+    }
+
+    form input,
+    form textarea,
+    form button,
+    h2,
+    h3
+    {
+        display: block;
+        width: 320px;
+        margin-bottom: 8px;
+        padding: 8px;
+        margin-left: 7%;
+    }
+
+    #product {
+        color: #ffffff;
+        background-color: black;
+    }
+    .frontstore h2,
+    #product h2,
+    .container h2 {
+    margin-left: 15%;
+    font-size: 2.5em;
+    }
+
+    .tenisModelo {
+        color: black;
+        padding-left: 30px;
+    }
+
+    .descriTenis {
+        max-width: 90px;
+        background-color: #3add83;
+        color: #fff;
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 90px;
+    }
+
+    .tenis-loja {
+        border-radius: 0;
+        border: none;
+        font-size: 1.5em;
+        margin: 25px;
+    }
+
+    .tenis-loja button {
+        margin-left: 65px;
+    }
+    
+    .tenis-loja img {
+        height: 290px;
+    }
+
+    .social-links {
+        margin-left: 9%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .social-links h3 {
+        margin:0;
+        padding:0;
+        margin-bottom: 30px;
+    }
+
+    .contact-methods p,
+    .container p {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .frontstore {
+        display: block;
+    }
+
+    #fachadaa {
+        margin-left: 40px;
+        height: 600px;
+        width: 735px;
+    }
+
+    .produtosloja {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        margin-bottom: 100px;
+    }
+
+    .tenis-loja img {
+        height: 350px;
+    }
+
+    #product h2 {
+        margin-left: 5%;
+    }
+
+    .contact-methods {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .social-links {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
